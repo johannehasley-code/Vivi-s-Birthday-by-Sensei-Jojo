@@ -670,7 +670,7 @@ nav a:hover { color: var(--sakura); }
   <a href="#lettre">Lettre</a>
 </nav>
 
-<!-- HERO -->
+
 <section class="hero" id="top">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
@@ -690,11 +690,10 @@ nav a:hover { color: var(--sakura); }
   </div>
 </section>
 
-<!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-inner">
     <div class="reveal">
-      <p class="section-label">// FICHE PERSONNAGE</p>
+      <p class="section-label"> FICHE PERSONNAGE</p>
       <h2 class="section-title">À propos d'elle 🌸</h2>
       <div class="section-underline"></div>
     </div>
@@ -726,10 +725,10 @@ nav a:hover { color: var(--sakura); }
   </div>
 </section>
 
-<!-- GALLERY -->
+
 <section class="gallery-section" id="galerie">
   <div class="reveal">
-    <p class="section-label">// ARCHIVES</p>
+    <p class="section-label"> ARCHIVES</p>
     <h2 class="section-title">Galerie 📸</h2>
     <div class="section-underline"></div>
   </div>
@@ -749,10 +748,10 @@ nav a:hover { color: var(--sakura); }
   </div>
 </section>
 
-<!-- QUALITIES -->
+
 <section class="qualities" id="qualites">
   <div class="reveal">
-    <p class="section-label">// COMPÉTENCES DÉBLOQUÉES</p>
+    <p class="section-label"> COMPÉTENCES DÉBLOQUÉES</p>
     <h2 class="section-title">Ses qualités (version RPG) ✨</h2>
     <div class="section-underline"></div>
   </div>
@@ -796,10 +795,10 @@ nav a:hover { color: var(--sakura); }
   </div>
 </section>
 
-<!-- STATS -->
+
 <section class="stats" id="stats">
   <div class="reveal">
-    <p class="section-label">// TABLEAU DES STATS</p>
+    <p class="section-label"> TABLEAU DES STATS</p>
     <h2 class="section-title">Status Screen 📊</h2>
     <div class="section-underline"></div>
   </div>
@@ -837,10 +836,10 @@ nav a:hover { color: var(--sakura); }
   </div>
 </section>
 
-<!-- MEMORIES -->
+
 <section class="memories" id="memories">
   <div class="reveal">
-    <p class="section-label">// FLASHBACK MODE</p>
+    <p class="section-label"> FLASHBACK MODE</p>
     <h2 class="section-title">Souvenirs 💭</h2>
     <div class="section-underline"></div>
   </div>
@@ -890,11 +889,10 @@ nav a:hover { color: var(--sakura); }
   </div>
 </section>
 
-<!-- LETTER -->
 <section class="letter" id="lettre">
   <div class="letter-card reveal">
     <div class="letter-deco">💌</div>
-    <p class="letter-from">// MESSAGE FINAL · POUR VINORIA</p>
+    <p class="letter-from"> MESSAGE FINAL · POUR VINORIA</p>
     <div class="letter-body">
       <p>Vinoria,</p>
       <br>
@@ -935,13 +933,12 @@ nav a:hover { color: var(--sakura); }
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>VINORIA · <span>BIRTHDAY SPECIAL</span> · © 2025 · 誕生日おめでとう 🌸</p>
 </footer>
 
 <script>
-// ── CURSOR ──
+
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
 let mx=0,my=0,rx=0,ry=0;
@@ -956,7 +953,6 @@ function animRing(){
 }
 animRing();
 
-// ── PARTICLES (stars + sparkles) ──
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 let W,H;
@@ -987,7 +983,7 @@ function drawStars(t){
 }
 drawStars(0);
 
-// ── SAKURA PETALS ──
+
 const PETALS=['🌸','✿','❀','🌺'];
 function spawnPetal(){
   const p=document.createElement('div');
@@ -1003,7 +999,6 @@ function spawnPetal(){
 }
 setInterval(spawnPetal,800);
 
-// ── SCROLL REVEAL ──
 const reveals=document.querySelectorAll('.reveal');
 const observer=new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{
@@ -1014,7 +1009,7 @@ const observer=new IntersectionObserver(entries=>{
 },{threshold:0.12});
 reveals.forEach(el=>observer.observe(el));
 
-// ── TIMELINE REVEAL ──
+
 const timelineItems=document.querySelectorAll('.timeline-item');
 const tlObs=new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{
@@ -1025,7 +1020,7 @@ const tlObs=new IntersectionObserver(entries=>{
 },{threshold:0.1});
 timelineItems.forEach(el=>tlObs.observe(el));
 
-// ── STAT BARS ──
+
 const bars=document.querySelectorAll('.stat-bar');
 const statObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
